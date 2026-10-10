@@ -13,7 +13,7 @@ package stackUI;
 	    private String currentPage = "home.com";
 
 	    // UI Components
-	    private final JTextField urlInput = new JTextField(15);
+	    private final JTextField urlInput1 = new JTextField(15);
 	    private final JButton backBtn = new JButton("← Back");
 	    private final JButton forwardBtn = new JButton("Forward →");
 	    private final JButton visitBtn = new JButton("Visit URL");
@@ -30,7 +30,7 @@ package stackUI;
 
 	        // Top Controls Panel
 	        JPanel controlsPanel = new JPanel();
-	        controlsPanel.add(urlInput);
+	        controlsPanel.add(urlInput1);
 	        controlsPanel.add(visitBtn);
 	        controlsPanel.add(backBtn);
 	        controlsPanel.add(forwardBtn);
@@ -76,12 +76,12 @@ package stackUI;
 
 	    // 2. State Mutators & Logic
 	    private void visitPage() {
-	        String newUrl = urlInput.getText().trim();
+	        String newUrl = urlInput1.getText().trim();
 	        if (!newUrl.isEmpty()) {
 	            backStack.push(currentPage);
 	            currentPage = newUrl;
 	            forwardStack.clear(); // Visiting a new page resets forward history
-	            urlInput.setText("");
+	            urlInput1.setText("");
 	            updateUIState();
 	        }
 	    }
