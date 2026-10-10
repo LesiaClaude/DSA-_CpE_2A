@@ -1,0 +1,34 @@
+package ArrayList;
+
+public class arrayTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StudentList list = new StudentList(1);
+		
+		Student a = new Student("Ara", 15);
+		Student b = new Student("Alex", 15);
+		Student c = new Student("Charles", 15);
+		Student d = new Student("Mats", 15);
+		Student e = new Student("John Mar", 15);
+		Student f = new Student("Bryle", 15);
+		Student g = new Student("MAecee", 15);
+		
+		
+		list.add(a);
+		list.add(b);
+		list.add(c);
+		list.add(d);
+		list.add(e);
+		list.add(f);
+		list.add(g);
+		list.isEmpty(0);
+		
+		
+		list.printList();
+		
+
+		System.out.println(list.size());
+	}
+
+}

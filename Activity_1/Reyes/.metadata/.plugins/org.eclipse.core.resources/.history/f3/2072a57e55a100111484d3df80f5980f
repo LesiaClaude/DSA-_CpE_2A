@@ -1,0 +1,11 @@
+package circularly;
+
+public class CNode {
+	private String data;
+	private CNode next;
+	
+	public CNode(String data) {
+		this.data = data;
+		this.next = null;
+	}
+}

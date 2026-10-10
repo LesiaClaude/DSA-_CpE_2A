@@ -1,0 +1,23 @@
+package circularly;
+
+import java.util.Random;
+
+public class CMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CircleList C = new CircleList();
+		int N = 3;
+		CNode it;
+		CNode goose;
+		Random rand = new Random();
+		rand.setSeed(System.currentTimeMillis());
+		String[] names = {"Bob","Jen","Pam","Tom","Ron","Vic","Sue","Joe"};
+		for (int i = 0; i < names.length; i++) {
+			C.add(new CNode(names[i]), null);
+			
+		}
+
+	}
+
+}

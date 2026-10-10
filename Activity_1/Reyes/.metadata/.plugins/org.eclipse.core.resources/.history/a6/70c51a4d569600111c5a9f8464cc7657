@@ -1,0 +1,18 @@
+package ArrayList;
+
+public class arrayTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StudentList[] list = new StudentList[2];
+		
+		Student a = new Student("Ara", 15);
+		
+		
+		list.add(a);
+		
+		
+
+	}
+
+}

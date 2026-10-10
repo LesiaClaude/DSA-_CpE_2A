@@ -1,0 +1,13 @@
+2025-12-04 09:38:34,891 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2026-08-10 19:13:40,828 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2026-08-11 20:46:30,171 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype_2.13/4.1.3_1.0.0/spark-scala-archetype_2.13-4.1.3_1.0.0.pom
+2026-08-11 20:46:30,295 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype_2.13/4.1.3_1.0.0/spark-scala-archetype_2.13-4.1.3_1.0.0.pom
+2026-08-11 20:46:30,650 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype-parent/4.1.3_1.0.0/spark-scala-archetype-parent-4.1.3_1.0.0.pom
+2026-08-11 20:46:30,676 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype-parent/4.1.3_1.0.0/spark-scala-archetype-parent-4.1.3_1.0.0.pom
+2026-08-11 20:46:31,008 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype_2.13/4.1.3_1.0.0/spark-scala-archetype_2.13-4.1.3_1.0.0.jar
+2026-08-11 20:46:31,035 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ai/raics/spark-scala-archetype_2.13/4.1.3_1.0.0/spark-scala-archetype_2.13-4.1.3_1.0.0.jar
+2026-08-17 18:26:58,486 [Worker-31: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-08-23 09:24:01,269 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-08-26 21:43:19,622 [Worker-12: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-08-31 23:19:27,207 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2026-09-04 00:38:43,427 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

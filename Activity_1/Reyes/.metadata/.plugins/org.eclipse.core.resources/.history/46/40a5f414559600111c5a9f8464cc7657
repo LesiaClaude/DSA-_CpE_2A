@@ -1,0 +1,61 @@
+package ArrayList;
+import java.util.NoSuchElementException;
+
+
+public class StudentList {
+	private Student[] students;
+	private int size;
+	private int capacity;
+	
+	public StudentList(int initialCapacity) {
+		if(initialCapacity <= 0) {
+			throw new IllegalArgumentException("Capacity must be greater than zero");
+		}
+		this.capacity = initialCapacity;
+		this.size = 0;
+		this.students = new Student[capacity];
+	}
+	public boolean isEmpty(int index) {
+		for(int i = 0; i < size; i++) {
+			if(students[i] == null) {
+				System.out.print("Folder is Empty");
+				return true;
+			}
+			else
+				System.out.print("Occupied");
+				return false;
+		}
+	}
+	
+	public void add(Student data) {
+		if (size == capacity) {
+			size = capacity + 1;			
+		}
+		students[size-1] = data;	
+	}
+	
+	public void add(int index, Student data) {
+		if (isEmpty(index)) {
+			students[index] = data;
+			size++;
+		}
+		else
+			System.out.print("Cannot insert, folder already occupied");
+	}
+}
+	
+	add(element);
+	add(index, element);
+	addAll(collection);
+	remove(index);
+	remove(element);
+	clear();
+	sort();
+	isEmpty();
+	get();
+	set();
+	size();
+	isEmpty();
+	sort();
+
+}

@@ -1,0 +1,95 @@
+package ArrayList;
+import java.util.NoSuchElementException;
+
+
+public class StudentList {
+	private Student[] students;
+	private Student[] newStudents;
+	private int size;
+	private int capacity;
+	
+	public StudentList(int initialCapacity) {
+		if(initialCapacity <= 0) {
+			throw new IllegalArgumentException("Capacity must be greater than zero");
+		}
+		capacity = initialCapacity;
+		size = 0;
+		students = new Student[capacity];
+	}
+	
+	public String toString() {
+		String s = "[";
+		for(int i = 0; i < size; i++) {
+			if(i > 0) s += ", ";
+			s += students[i];
+		}
+		return s + "]";
+	}
+	
+	public boolean isEmpty(int index) {
+		int counter = 0;
+		for(int i = 0; i < size; i++) {
+			if(students[i] != null)
+				counter++;
+		}
+			if(counter == 0) {
+				System.out.println("Folder is Empty");
+				return true;
+			}
+			else
+				System.out.println("Occupied");
+				return false;
+	}
+	
+	public void add(Student data) {
+		if (size == capacity) {
+			int newCapacity = capacity*2;
+			newStudents = new Student[newCapacity];
+			for (int i = 0 ; i < size; i++) {
+				newStudents[i] = students[i];
+			}
+			students = newStudents;
+			capacity = newCapacity;
+		}
+		students[size] = data;
+		size++;
+		
+	}
+	
+	public void add(int index, Student data) {
+		if (isEmpty(index)) {
+			students[index] = data;
+			size++;
+		}
+		else {
+//			System.out.print("Cannot insert, folder already occupied");
+			if(size == index) {
+				add(data);
+			}
+			else if(capacity < index) {
+				newStudents = new Student[index+1];
+				for (int i = 0 ; i < index+1; i++) {
+					newStudents[i] = students[i];
+				}
+				students = newStudents;
+				capacity = index+1;
+				students[index] = data;
+			}
+		}	
+	}
+	
+	public void printList() {
+		System.out.println("Students: ");
+		for (int i = 0; i < capacity; i++) {
+			if(students[i] != null)
+				System.out.println(students[i].toString());
+			else
+				System.out.println("null");
+		}
+	}
+	public int size() {
+		return size;
+	//	return students.length;
+		}
+}
+	

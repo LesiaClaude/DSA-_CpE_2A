@@ -1,0 +1,13 @@
+INDEX VERSION 1.134+C:\Users\charl\Desktop\Reyes\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3642291114.index
+3104547940.index
+4010999909.index
+1934745937.index
+3720593767.index
+1292166488.index
+3836409833.index
+278873117.index
+739964282.index
+1657330681.index
+1067094681.index
